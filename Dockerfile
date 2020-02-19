@@ -8,6 +8,6 @@ RUN curl "https://d1vvhvl2y92vvt.cloudfront.net/awscli-exe-linux-x86_64.zip" -o 
     unzip awscliv2.zip && \
     ./aws/install
 
-RUN curl https://releases.hashicorp.com/terraform/0.12.20/terraform_0.12.20_linux_amd64.zip && \
-    unzip -o terraform_0.12.20_linux_amd64.zip && \
+RUN curl "https://releases.hashicorp.com/terraform/0.12.20/terraform_0.12.20_linux_amd64.zip" -o "terraform_0.12.20_linux_amd64.zip" && \
+    unzip terraform_0.12.20_linux_amd64.zip && \
     mv terraform /usr/bin/terraform
