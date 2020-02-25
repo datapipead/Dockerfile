@@ -11,3 +11,5 @@ RUN curl "https://d1vvhvl2y92vvt.cloudfront.net/awscli-exe-linux-x86_64.zip" -o 
 RUN curl "https://releases.hashicorp.com/terraform/0.12.20/terraform_0.12.20_linux_amd64.zip" -o "terraform_0.12.20_linux_amd64.zip" && \
     unzip terraform_0.12.20_linux_amd64.zip && \
     mv terraform /usr/bin/terraform
+
+RUN pip install awscli
